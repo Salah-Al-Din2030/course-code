@@ -1,0 +1,66 @@
+@mixin font-base {
+	padding: 0;
+	margin: 0;
+	line-height: 1.3;
+	font-weight: 600;
+}
+
+h4 {
+	@include font-base;
+}
+
+p {
+	@include font-base;
+	color: grey;
+	font-size: 0.7rem;
+}
+
+.container1 {
+	width: 560px;
+	margin: 0 auto;
+}
+
+header,
+section {
+	margin-top: 5px;
+	position: sticky;
+	text-align: center;
+	width: 560px;
+	background-color: #fff;
+}
+
+section {
+
+}
+
+.logo {
+	width: 120px;
+	padding-bottom: 5px;
+}
+
+main {
+	margin-top: 0;
+	padding: 10px;
+	background-color: white;
+}
+
+article {
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+	border: 2px solid white;
+	border-radius: 8px;
+	margin: 0 auto;
+}
+article:hover {
+			border: 2px solid #ff9999;
+		}
+
+.thumb {
+	height: 70px;
+	border-radius: 4px;
+}
+
+.details {
+	padding: 8px 22px;
+}
